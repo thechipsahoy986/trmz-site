@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRMZ - The Real Music Zone</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <p>✅ Message sent! We'll be in touch soon.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+<body>
+  <header>
+    <img src="images/trmz-logo-trans.png" alt="TRMZ Logo" class="logo" />
+  </header>
+
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#events">Events</a>
+    <a href="#contact">Book Us</a>
+    <a href="#facebook">Facebook</a>
+  </nav>
+
+  <section id="gallery">
+    <h2>📸 Gallery</h2>
+    <div class="gallery-grid">
+      <figure>
+        <img src="images/indoor_example_indoor.JPG" alt="Indoor Party" />
+      </figure>
+      <figure>
+        <img src="images/outdoor_event_example.jpg" alt="Outdoor Community Event" />
+      </figure>
+      <!-- Add more images here. Use the same pattern: <figure><img ...></figure> -->
+    </div>
+
+    <!-- Separate captions row that lines up with the gallery grid columns -->
+    <div class="gallery-captions" aria-hidden="false">
+      <div class="caption">Indoor Party</div>
+      <div class="caption">Outdoor Community Event</div>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>📅 Upcoming Events</h2>
+    <ul id="event-list">
+      <!-- Events will be loaded here -->
+      <li data-date="2025-11-09">
+        <strong>🎧 TRMZ @ Riverfront Bash</strong><br />
+        <em>Saturday, November 9th – 6:00 PM to 11:00 PM</em><br />
+        Jeffersonville Riverstage – Free Entry<br />
+        Live DJ sets, food trucks, and community vendors
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>📬 Contact & Booking</h2>
+    <form id="contact-form">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Message or Booking Request (date, event, and budget)" required></textarea>
+  <button type="submit">Send</button>
+</form>
+  </section>
+
+  <section id="facebook">
+    <h2>🔗 Follow Us</h2>
+    <iframe 
+  src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/profile.php?id=61582789113435&tabs=timeline&width=800&height=600&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+  width="800" 
+  height="600" 
+  style="border:none;overflow:hidden" 
+  scrolling="no" 
+  frameborder="0" 
+  allowfullscreen="true"
+  allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+</iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 TRMZ. All rights reserved.</p>
+  </footer>
+</body>
+</html>
